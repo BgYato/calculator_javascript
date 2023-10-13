@@ -1,2 +1,2 @@
-# calculator_javascript
-A calculator basic work in class.
+# reloj digital
+Ejercicio del reloj digital con javascript
