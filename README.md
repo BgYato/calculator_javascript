@@ -1,2 +1,2 @@
-# reloj digital
-Ejercicio del reloj digital con javascript
+# reloj analogo
+Ejercicio del reloj analogo con javascript
