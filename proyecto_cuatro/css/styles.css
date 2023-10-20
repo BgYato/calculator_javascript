@@ -92,7 +92,7 @@ body {
 .reloj_digital {
     border: 1px solid rgb(100, 45, 100);
     box-shadow: 1px -0.5px 5px rgb(115, 72, 139);
-    width: 100px;
+    width: 120px;
     height: 30px;    
     display: flex;
     justify-content: center;
