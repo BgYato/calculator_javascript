@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 26, 34);
+}
+
+.reloj {
+    border: 1rem solid rgb(81, 51, 99);
+    box-shadow: -2px 2px 30px rgb(115, 72, 139);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+
+    font-family: monospace;
+    font-size: 3rem;
+    color: rgb(81, 51, 99);
+}
