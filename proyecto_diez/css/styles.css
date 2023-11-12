@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+    max-width: 5rem;
+    margin-left: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+}
+
+.listaMenu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.listaMenu li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.abrirMenu, .cerrarMenu {    
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .abrirMenu, .cerrarMenu {
+        display: block;
+        border: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .cerrarMenu {
+        text-align: center;
+        width: 100%;
+        background-color: transparent;
+        color: #ececec;
+    }
+
+    .menuPrincipal {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 1rem;
+
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.35);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .listaMenu {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .listaMenu li a {
+        color: #ececec;
+    }
+
+    .menuPrincipal.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+}
