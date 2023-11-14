@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(83, 200, 220);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+#mensaje {
+    color: rgb(255, 45, 45);
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.spanContador{
+    height: 50px;
+    width: 80px;
+    border: 2px rgb(131, 203, 216) solid;
+
+    border-radius: 50vh;    
+}
+
+#cuentaRegresiva{
+    display: flex;    
+    align-items: center;
+} 
+
+#cuentaRegresiva .spanContador {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+
+    box-shadow: inset 0 0px 15px rgba(255, 255, 255, 0.637);
+                    
+}
+
+#mensaje {
+    padding: 1rem;
+}
+
+.indicadores{
+    width: 100%;
+    font-weight: bold;
+    color: white;    
+
+    padding-bottom: 3rem;
+} .indicadores span {
+    margin: 0 3.5rem;
+    font-size: 20px;
+}
+
+#botones {    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+} #botones button {
+    padding: 10px 20px;
+    border-radius: 50vh;
+    border: none;
+    color: rgb(255, 45, 45);
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#play.disponible {
+    pointer-events: all;
+    background-color: rgb(255, 45, 45);
+    color: white;
+}#pause.disponible{
+    pointer-events: all;
+    background-color: rgb(255, 45, 45);
+    color: white;
+} #play.disponible:hover{
+    background-color: rgb(248, 79, 79);
+}
+#pause.disponible:hover{
+    background-color: rgb(248, 79, 79);
+}
+
+.papaNoel{
+    width: 600px;
+    height: 500px;
+    background-image: url("../img/papaNoel.png");
+} .papaNoel.on {
+    background-image: url("../img/papaNoel.gif");
+}
