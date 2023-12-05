@@ -14,7 +14,7 @@ inputTarjeta.addEventListener("keydown", (e) => {
     if (e.key === "Tab") {
         return;
     }
-    e.preventDefault
+    e.preventDefault()
     ingresoDatos(mascaraNumero, e.key, TarjetaNumero);
     inputTarjeta.value = TarjetaNumero.join("");
 });
@@ -23,7 +23,7 @@ inputFecha.addEventListener("keydown", (e) => {
     if (e.key === "Tab") {
         return;
     }
-    e.preventDefault
+    e.preventDefault()
     ingresoDatos(mascaraFecha, e.key, FechaNumero);
     inputFecha.value = FechaNumero.join("");
 });
@@ -32,7 +32,7 @@ inputCVV.addEventListener("keydown", (e) => {
     if (e.key === "Tab") {
         return;
     }
-    e.preventDefault
+    e.preventDefault()
     ingresoDatos(mascaraCVV, e.key, cvvNumero);
     inputCVV.value = cvvNumero.join("");
 });
